@@ -1,11 +1,10 @@
-public class HelloWorld {
-  
+public class HelloWorld {  
   
   public static void main(String[] args)
-  {int n=9;
+  {int n=11;
    int total=0;
    int counter=0;
-   while (counter != 11){
+   while (counter < 11){
    	n++;
      if (Prime(n)){
      	if (PrimeTruncations(n)){
@@ -18,12 +17,17 @@ public class HelloWorld {
     
    
     System.out.println(total);
+   System.out.println(Prime(1));
       
   }
   
   public static boolean Prime(int input)
   { int n;
    if(input < 0) input *= -1;
+   if (input == 1) {
+   	return false;}
+   if (input == 2) {
+   return true;}
     if (input%2==0){
       return false;}
     for (n = 3; n*n <= input; n+=2){
