@@ -18,10 +18,7 @@ def decreasing(x):
 def bouncy(x):
     return not(increasing(x) or decreasing(x)) 
 
-
 def go(bound):
-    '''
-    '''
     numerator = 0
     denominator = 1
     current = 1
